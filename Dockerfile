@@ -4,7 +4,7 @@ MAINTAINER yikyo <yikyo666@gmail.com>
 
 RUN sed -i -e 's/dl-cdn\.alpinelinux\.org/mirrors\.ustc\.edu\.cn/g' /etc/apk/repositories
 
-RUN apk add --update py-pip && rm -rf /var/cache/apk/*
+RUN apk add --update --no-cache py-pip
 
 RUN pip install shadowsocks
 
