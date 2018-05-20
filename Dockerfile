@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:latest
 
 MAINTAINER yikyo <yikyo666@gmail.com>
 
