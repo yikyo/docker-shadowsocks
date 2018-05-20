@@ -2,10 +2,11 @@ FROM alpine:3.6
 
 MAINTAINER yikyo <yikyo666@gmail.com>
 
-RUN apk add --update --no-cache py-pip
+RUN apk add --update --no-cache tzdata py-pip 
 
 RUN pip install shadowsocks
 
+ENV TZ Asia/Shanghai
 ENV SERVER_ADDR 0.0.0.0
 ENV SERVER_PORT 8388
 ENV PASSWORD password
